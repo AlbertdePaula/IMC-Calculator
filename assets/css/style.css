@@ -64,7 +64,7 @@ h1 {
     border-radius: 20px;
 }
 
-.resultado {
+#resultado {
     margin-top: 10px;
     float: right;
     width: 50%;
@@ -72,6 +72,15 @@ h1 {
     background: #dbf2f7;
     border-radius: 20px;
     border: 1px solid #000;
+}
+
+.paragrafo-resultado, .bad {
+    background: rgb(2, 255, 179);    
+    padding: 10px 20px;
+}
+
+.bad {
+    background: rgb(235, 112, 112);
 }
 
 form input, form button, form label {
