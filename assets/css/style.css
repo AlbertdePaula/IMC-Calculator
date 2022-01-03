@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+    --primary-color: #009bb6;
+    --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: block;
+    max-width: 640px;
+    height: 700px;
+    margin: 50px auto;
+    background: rgb(207, 205, 205);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cabecalho {
+    width: 600px;
+    height: 300px;
+    background: #dbf2f7;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.coluna1 {
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+}
+
+.coluna2 {
+    float: right;
+    width: 50%;
+    padding-left: 50px;
+     /* topo | direita | inferior | esquerda */
+}
+
+#formulario {
+    float: left;
+    border: 1px solid #000;
+    width: 50%;
+    height: 260px;
+    margin-top: 10px;
+    background: #dbf2f7;
+    border-radius: 20px;
+}
+
+.resultado {
+    margin-top: 10px;
+    float: right;
+    width: 50%;
+    height: 260px;
+    background: #dbf2f7;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+form input, form button, form label {
+    margin-left: 70px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;   
+}
+
+form label {
+    margin-left: 115px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);  
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font: 700 18px Verdana;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+form button:active {
+    background: red;
+}  
+
