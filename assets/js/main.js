@@ -61,8 +61,7 @@ function setResultado (msg, isValid){
     } else {
         p.classList.add('bad');
     }
-
-
+    
     p.innerHTML = msg;
     resultado.appendChild(p);
 }

@@ -19,68 +19,59 @@ body {
     line-height: 1.5em;
 }
 
-.container {
-    display: grid;
-    width: 640px;
-    height: 700px;
-    margin: 0 auto;
-    padding: 0.8rem;
-    border-radius: 20px;
-    background-color: rgb(194, 191, 191);
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 2fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    grid-template-areas: "titulo titulo"
-                         "coluna1 coluna2"
-                         "formulario resultado"            
-}
-
-.titulo {
-    grid-area: titulo;
+h1 {
     text-align: center;
 }
 
-.coluna1 {
-    padding-left: 20px;
-    background: red;
-    grid-area: coluna1;
-    padding-left: 4.5rem;
+.container {
+    display: block;
+    max-width: 640px;
+    height: 700px;
+    margin: 50px auto;
+    background: rgb(207, 205, 205);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cabecalho {
+    width: 600px;
+    height: 300px;
     background: #dbf2f7;
     border-radius: 20px;
     border: 1px solid #000;
 }
 
+.coluna1 {
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+}
+
 .coluna2 {
-    padding-left: 20px;
-    background: #dbf2f7;
-    grid-area: coluna2;
-    padding-left: 4.5rem;
-    border-radius: 20px;
-    border: 1px solid #000;
+    float: right;
+    width: 50%;
+    padding-left: 50px;
      /* topo | direita | inferior | esquerda */
 }
 
 #formulario {
-   
+    float: left;
     border: 1px solid #000;
-    width: 100%;
+    width: 50%;
     height: 260px;
-    padding-left: 4.5rem;
-    padding-top: 1rem;
-    
+    margin-top: 10px;
     background: #dbf2f7;
-    border-radius: 15px;
-    grid-area: formulario;
+    border-radius: 20px;
 }
 
 #resultado {
+    margin-top: 10px;
+    float: right;
+    width: 50%;
     height: 260px;
     background: #dbf2f7;
     border-radius: 20px;
     border: 1px solid #000;
-    grid-area: resultado;
-    padding-top: 3rem;
 }
 
 .paragrafo-resultado, .bad {
@@ -92,6 +83,10 @@ body {
     background: rgb(235, 112, 112);
 }
 
+form input, form button, form label {
+    margin-left: 70px;
+}
+
 form input {
     font-size: 24px;
     height: 50px;
@@ -100,7 +95,7 @@ form input {
 }
 
 form label {
-    margin-left: 50px;
+    margin-left: 115px;
 }
 
 form input:focus {
@@ -125,4 +120,5 @@ form button:hover {
 
 form button:active {
     background: red;
-}
+}  
+
